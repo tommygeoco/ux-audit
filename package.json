@@ -1,14 +1,14 @@
 {
-  "name": "ux-audit",
+  "name": "ui-audit",
   "version": "1.0.0",
-  "description": "AI skill for automated design audits. Evaluate interfaces against proven UX principles for visual hierarchy, accessibility, cognitive load, and more. Based on Making UX Decisions by Tommy Geoco.",
-  "keywords": ["ux", "design", "ui", "audit", "checklist", "ai-skill", "claude", "codex", "clawdbot", "design-audit", "accessibility", "visual-hierarchy"],
+  "description": "AI skill for automated UI audits. Evaluate interfaces against proven UX principles for visual hierarchy, accessibility, cognitive load, and more. Based on Making UX Decisions by Tommy Geoco.",
+  "keywords": ["ux", "design", "ui", "audit", "checklist", "ai-skill", "claude", "codex", "clawdbot", "ui-audit", "accessibility", "visual-hierarchy"],
   "author": "Tommy Geoco <tommy@uxtools.co> (https://uxtools.co)",
   "license": "MIT",
   "homepage": "https://audit.uxtools.co",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tommygeoco/ux-audit"
+    "url": "https://github.com/tommygeoco/ui-audit"
   },
   "files": [
     "SKILL.md",
@@ -22,6 +22,6 @@
     "./references/*": "./references/*"
   },
   "scripts": {
-    "postinstall": "echo '\\n📖 UX Decisions skill installed. Add to your project:\\n   - Clawdbot: Copy to ~/clawd/skills/ux-decisions/\\n   - Claude: Copy CLAUDE.md to your project root\\n'"
+    "postinstall": "echo '\\n📖 UI Audit skill installed. Add to your project:\\n   - Clawdbot: Copy to ~/clawd/skills/ui-audit/\\n   - Claude: Copy CLAUDE.md to your project root\\n'"
   }
 }

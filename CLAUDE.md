@@ -1,4 +1,4 @@
-# UX Decisions Framework
+# UI Audit Framework
 
 A comprehensive UI design decision-making framework. Use for rapid, intentional interface design.
 

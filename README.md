@@ -2,26 +2,26 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="logo-dark.png" />
     <source media="(prefers-color-scheme: light)" srcset="logo-light.png" />
-    <img src="logo-light.png" alt="Design Audit" width="50" />
+    <img src="logo-light.png" alt="UI Audit" width="400" />
   </picture>
 </p>
 
 <p align="center">
-  <strong>AI skill for automated design audits</strong><br>
+  <strong>AI skill for automated UI audits</strong><br>
   Evaluate interfaces against proven UX principles.
 </p>
 
 <p align="center">
   <a href="https://audit.uxtools.co">Guidelines</a> •
-  <a href="https://clawdhub.com/skills/ux-audit">ClawdHub</a> •
-  <a href="https://npmjs.com/package/ux-audit">npm</a>
+  <a href="https://clawdhub.com/skills/ui-audit">ClawdHub</a> •
+  <a href="https://npmjs.com/package/ui-audit">npm</a>
 </p>
 
 ---
 
 ## What is this?
 
-A skill that gives AI assistants the ability to perform structured UI/UX audits. Based on [Making UX Decisions](https://uxdecisions.com) by Tommy Geoco.
+A skill that gives AI assistants the ability to perform structured UI audits. Based on [Making UX Decisions](https://uxdecisions.com) by Tommy Geoco.
 
 **Audits include:**
 - Visual hierarchy & typography
@@ -36,10 +36,10 @@ A skill that gives AI assistants the ability to perform structured UI/UX audits.
 
 ```bash
 # ClawdHub
-clawdhub install ux-audit
+clawdhub install ui-audit
 
 # npm
-npm install ux-audit
+npm install ui-audit
 
 # Claude Desktop
 # Copy CLAUDE.md to your project root
@@ -58,7 +58,7 @@ What visual hierarchy patterns should I use for a pricing page?
 ## What's Included
 
 ```
-ux-audit/
+ui-audit/
 ├── SKILL.md                    # Main skill instructions
 ├── CLAUDE.md                   # Claude-specific quick reference
 └── references/
