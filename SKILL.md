@@ -2,12 +2,9 @@
 name: ux-audit
 description: "AI skill for automated design audits. Evaluate interfaces against proven UX principles for visual hierarchy, accessibility, cognitive load, navigation, and more. Based on Making UX Decisions by Tommy Geoco."
 author: Tommy Geoco
-authorUrl: https://x.com/designertom
 homepage: https://audit.uxtools.co
 logo: logo-light.png
 logoDark: logo-dark.png
-metadata:
-  version: "1.1.0"
 ---
 
 # Design Audit Skill
@@ -117,3 +114,68 @@ A design decision is "good" when it:
 - Balances user familiarity with differentiation needs
 
 There is no universally correct UI solution—only contextually appropriate ones.
+
+---
+
+## Generating Audit Reports
+
+When asked to audit a design, generate a comprehensive report. Always include these sections:
+
+### Required Sections (always include)
+1. **Visual Hierarchy** — Headings, CTAs, grouping, reading flow, type scale, color hierarchy, whitespace
+2. **Visual Style** — Spacing consistency, color usage, elevation/depth, typography, motion/animation
+3. **Accessibility** — Keyboard navigation, focus states, contrast ratios, screen reader support, touch targets
+
+### Contextual Sections (include when relevant)
+4. **Navigation** — For multi-page apps: wayfinding, breadcrumbs, menu structure, information architecture
+5. **Usability** — For interactive flows: discoverability, feedback, error handling, cognitive load
+6. **Onboarding** — For new user experiences: first-run, tutorials, progressive disclosure
+7. **Social Proof** — For landing/marketing pages: testimonials, trust signals, social integration
+8. **Forms** — For data entry: labels, validation, error messages, field types
+
+### Audit Output Format
+
+```json
+{
+  "title": "Design Name — Screen/Flow",
+  "project": "Project Name",
+  "date": "YYYY-MM-DD",
+  "figma_url": "optional",
+  "screenshot_url": "optional - URL to screenshot",
+  
+  "macro_bets": [
+    { "category": "velocity|efficiency|accuracy|innovation", "description": "...", "alignment": "strong|moderate|weak" }
+  ],
+  
+  "jtbd": [
+    { "user": "User Type", "situation": "context without 'When'", "motivation": "goal without 'I want to'", "outcome": "benefit without 'so I can'" }
+  ],
+  
+  "visual_hierarchy": {
+    "title": "Visual Hierarchy",
+    "checks": [
+      { "label": "Check name", "status": "pass|warn|fail|na", "notes": "Details" }
+    ]
+  },
+  "visual_style": { ... },
+  "accessibility": { ... },
+  
+  "priority_fixes": [
+    { "rank": 1, "title": "Fix title", "description": "What and why", "framework_reference": "XX-filename.md → Section Name" }
+  ],
+  
+  "notes": "Optional overall observations"
+}
+```
+
+### Checks Per Section (aim for 6-10 each)
+
+**Visual Hierarchy**: heading distinction, primary action clarity, grouping/proximity, reading flow, type scale, color hierarchy, whitespace usage, visual weight balance
+
+**Visual Style**: spacing consistency, color palette adherence, elevation/shadows, typography system, border/radius consistency, icon style, motion principles
+
+**Accessibility**: keyboard operability, visible focus, color contrast (4.5:1), touch targets (44px), alt text, semantic markup, reduced motion support
+
+**Navigation**: clear current location, predictable menu behavior, breadcrumb presence, search accessibility, mobile navigation pattern
+
+**Usability**: feature discoverability, feedback on actions, error prevention, recovery options, cognitive load management, loading states
