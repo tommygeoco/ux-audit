@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="logo.png" alt="Design Audit" width="400" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="logo-dark.png" />
+    <source media="(prefers-color-scheme: light)" srcset="logo-light.png" />
+    <img src="logo-light.png" alt="Design Audit" width="400" />
+  </picture>
 </p>
 
 <p align="center">
@@ -86,7 +90,7 @@ View the full list of principles at **[audit.uxtools.co](https://audit.uxtools.c
 
 ## Author
 
-**Tommy Geoco** — [uxtools.co](https://uxtools.co) • [uxdecisions.com](https://uxdecisions.com)
+**[Tommy Geoco](https://x.com/designertom)** — [uxtools.co](https://uxtools.co) • [uxdecisions.com](https://uxdecisions.com)
 
 ## License
 

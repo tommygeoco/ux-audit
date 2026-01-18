@@ -2,7 +2,12 @@
 name: ux-audit
 description: "AI skill for automated design audits. Evaluate interfaces against proven UX principles for visual hierarchy, accessibility, cognitive load, navigation, and more. Based on Making UX Decisions by Tommy Geoco."
 author: Tommy Geoco
+authorUrl: https://x.com/designertom
 homepage: https://audit.uxtools.co
+logo: logo-light.png
+logoDark: logo-dark.png
+metadata:
+  version: "1.1.0"
 ---
 
 # Design Audit Skill
