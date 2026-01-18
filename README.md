@@ -38,11 +38,43 @@ A skill that gives AI assistants the ability to perform structured UI audits. Ba
 # ClawdHub
 clawdhub install ui-audit
 
-# npm
+# npm / Vercel AI SDK
 npm install ui-audit
 
-# Claude Desktop
+# Claude Code / Cursor
 # Copy CLAUDE.md to your project root
+```
+
+### Vercel AI SDK
+
+After installing via npm, load the skill into your system prompt:
+
+```ts
+import { readFileSync } from "fs";
+import { generateText } from "ai";
+
+const uiAuditSkill = readFileSync(
+  "node_modules/ui-audit/SKILL.md",
+  "utf-8"
+);
+
+const result = await generateText({
+  model: "anthropic/claude-sonnet-4",
+  system: uiAuditSkill,
+  prompt: "Audit this design: [figma-url or screenshot]",
+});
+```
+
+Or load specific reference files for targeted guidance:
+
+```ts
+import { readFileSync } from "fs";
+
+// Load just the visual hierarchy patterns
+const visualHierarchy = readFileSync(
+  "node_modules/ui-audit/references/23-patterns-visual-hierarchy.md",
+  "utf-8"
+);
 ```
 
 ## Usage
