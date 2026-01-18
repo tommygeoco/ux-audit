@@ -1,14 +1,14 @@
 {
-  "name": "ux-decisions",
+  "name": "ux-audit",
   "version": "1.0.0",
-  "description": "AI skill for the Making UX Decisions framework — a software design decision-making system for rapid, intentional interface design. Learn more at uxdecisions.com",
-  "keywords": ["ux", "design", "ui", "framework", "audit", "checklist", "ai-skill", "claude", "codex", "clawdbot", "making-ux-decisions"],
-  "author": "Tommy Geoco <tommy@uxtools.co> (https://uxdecisions.com)",
+  "description": "AI skill for automated design audits. Evaluate interfaces against proven UX principles for visual hierarchy, accessibility, cognitive load, and more. Based on Making UX Decisions by Tommy Geoco.",
+  "keywords": ["ux", "design", "ui", "audit", "checklist", "ai-skill", "claude", "codex", "clawdbot", "design-audit", "accessibility", "visual-hierarchy"],
+  "author": "Tommy Geoco <tommy@uxtools.co> (https://uxtools.co)",
   "license": "MIT",
-  "homepage": "https://uxdecisions.com",
+  "homepage": "https://audit.uxtools.co",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tommygeoco/ux-decisions"
+    "url": "https://github.com/tommygeoco/ux-audit"
   },
   "files": [
     "SKILL.md",
